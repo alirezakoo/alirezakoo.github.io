@@ -7,6 +7,7 @@
 
 (function($) {
 "use strict";
+
     // Subpages resize
     function subpages_resize() {
         var subpagesHeight = $('.pt-page-current').height();
@@ -87,16 +88,24 @@
     //On Window load & Resize
     $(window)
         .on('load', function() { //Load
+            var html = document.documentElement;
+            var ptPage = $('.subpages');
+            ptPage.fadeOut(0);
             // Animation on Page Loading
             $(".preloader").fadeOut("slow");
 
             // initializing page transition.
-            var ptPage = $('.subpages');
+            
+            ptPage.fadeIn(1000);
+            ptPage.scrollTop(0);
             if (ptPage[0]) {
+
                 PageTransitions.init({
                     menu: 'ul.site-main-menu',
                 });
+
             }
+
         })
         .on('resize', function() { //Resize
              mobileMenuHide();

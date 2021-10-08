@@ -12,7 +12,6 @@
         var subpagesHeight = $('.pt-page-current').height();
         $(".subpages").height(subpagesHeight + 50);
     }
-    
     // Portfolio subpage filters
     function portfolio_init() {
         var portfolio_grid = $('#portfolio_grid'),

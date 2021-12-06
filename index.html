@@ -1172,7 +1172,7 @@
                       </div>
                       <form id="contact-form" method="post" action="mailto:alirezakoo@gmail.com" enctype="text/plain">
 
-                        <div class="messages"></div>
+
 
                         <div class="controls">
                           <div class="form-group form-group-with-icon">
@@ -1186,7 +1186,7 @@
                           <div class="form-group form-group-with-icon">
                             <i class="fa fa-envelope"></i>
                             <label>Email Address</label>
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder required="required" data-error="Valid email is required.">
+                            <input id="form_email" type="email" name="mail" class="form-control" placeholder required="required" data-error="Valid email is required.">
                             <div class="form-control-border"></div>
                             <div class="help-block with-errors"></div>
                           </div>
@@ -1194,7 +1194,7 @@
                           <div class="form-group form-group-with-icon">
                             <i class="fa fa-comment"></i>
                             <label>Message for Me</label>
-                            <textarea id="form_message" name="message" class="form-control" placeholder rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                            <textarea id="form_message" name="comment" class="form-control" placeholder rows="4" required="required" data-error="Please, leave me a message." maxlength="1000"></textarea>
                             <div class="form-control-border"></div>
                             <div class="help-block with-errors"></div>
                           </div>
@@ -1203,7 +1203,7 @@
 
                           <input type="submit" class="button btn-send" value="Send message">
                           <input type="reset" class="button btn-warning" value="Reset">
-                        </div>
+
                       </form>
                     </div>
                   </div>
